@@ -1,5 +1,5 @@
 <view>
-  <button onTap="handleOpenModal">Mostrar modal</button>
+  <button onTap="handleOpenModal" style="margin-top:20px">Mostrar modal</button>
   <button onTap="handleOpenModalOne" style="margin-top:20px">Mostrar modal 2</button>
   <modal-accept-cancel
     title="¿Titulo"
