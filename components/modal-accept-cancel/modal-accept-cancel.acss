@@ -26,7 +26,7 @@
 }
 
 .ant-modal-body {
-  width: 400px;
+  width: 370px;
 }
 
 .ant-modal-body-title {
