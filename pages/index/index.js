@@ -1,6 +1,7 @@
 Page({
   data: {
-    modalVisible: false
+    modalVisible: false,
+    modalVisibleOne: false
   },
   handleOpenModal() {
     this.setData({
@@ -9,7 +10,8 @@ Page({
   },
   handleClose() {
     this.setData({
-      modalVisible: false
+      modalVisible: false,
+      modalVisibleOne: false
     });
   },
   onAcceptButtonTap() {
@@ -20,6 +22,19 @@ Page({
   },
   onCancelButtonTap() {
     console.log("Cancelar");
+    this.setData({
+      modalVisible: false
+    });
+  },
+
+  handleOpenModalOne() {
+    this.setData({
+      modalVisibleOne: true
+    });
+  },
+
+  onAcceptButtonTapOne() {
+    console.log("Aceptar");
     this.setData({
       modalVisible: false
     });

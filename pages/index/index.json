@@ -3,6 +3,7 @@
   "usingComponents": {
     "icon": "antd-mini/es/Icon/index",
     "modal-accept-cancel": "/components/modal-accept-cancel/modal-accept-cancel",
+    "modal-accept":"/components/modal-accept/modal-accept",
     "button": "antd-mini/es/Button/index"
   }
 }

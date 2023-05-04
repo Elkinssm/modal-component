@@ -1,5 +1,6 @@
 <view>
   <button onTap="handleOpenModal">Mostrar modal</button>
+  <button onTap="handleOpenModalOne">Mostrar modal 2</button>
   <modal-accept-cancel
     title="¿Estás seguro que deseas desactivar el servicio de Roaming internacional en tu línea?"
     content="3102659717"
@@ -9,7 +10,14 @@
     secondaryButtonText="Cancelar"
     onPrimaryButtonTap="onAcceptButtonTap"
     onSecondaryButtonTap="onCancelButtonTap"
-    
   />
-  
+  <modal-accept
+    title="Titulo"
+    content="Contenido"
+    visible="{{modalVisibleOne}}"
+    onClose="handleClose"
+    primaryButtonText="Aceptar"
+    onPrimaryButtonTap="onAcceptButtonTapOne"
+  />
+
 </view>
