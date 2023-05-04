@@ -1,15 +1,3 @@
-.bodyImg {
-  width: 424rpx;
-  height: 528rpx;
-  border-radius: 8rpx;
-}
-
-.bodyAction {
-  padding-top: 32rpx;
-  font-size: 48rpx;
-  text-align: center;
-  color: #fff;
-}
 
 .ant-modal-body-footer-horizontal-primary {
   background-color: #F6392C;
