@@ -1,42 +1,45 @@
 Page({
   data: {
-    customVisible: false,
-    switchValue: false
+    modalVisible: false,
+    modalVisibleOne: false
   },
-  handleOpen(e) {
-    const { field } = e.target.dataset;
-    this.setData({ [field]: true });
-  },
-  handleChange({ detail }) {
+  handleOpenModal() {
     this.setData({
-      customVisible: detail.value
+      modalVisible: true
     });
   },
-  handleClose() {
+  handleCloseModal() {
     this.setData({
-      customVisible: false,
-      switchValue: false
+      modalVisible: false
     });
   },
-  handlePrimaryButtonTap() {
-    this.handleClose();
-    my.showToast({
-      content: "Haga clic en Aceptar",
-      duration: 1000
-    });
+  onPrimaryButtonTap() {
+    console.log("Aceptar");
     this.setData({
-      switchValue: true
+      modalVisible: false
     });
   },
-  handleSecondaryButtonTap() {
-    this.handleClose();
-    my.showToast({
-      content: "Haga clic en Cancelar",
-      duration: 1000
-    });
+  onSecondaryButtonTap() {
+    console.log("Cancelar");
     this.setData({
-      switchValue: false,
-      customVisible: false
+      modalVisible: false
+    });
+  },
+
+  handleOpenModalOne() {
+    this.setData({
+      modalVisibleOne: true
+    });
+  },
+  handleCloseModalOne() {
+    this.setData({
+      modalVisibleOne: false
+    });
+  },
+  onPrimaryButtonTapOne() {
+    console.log("Aceptar");
+    this.setData({
+      modalVisibleOne: false
     });
   }
 });

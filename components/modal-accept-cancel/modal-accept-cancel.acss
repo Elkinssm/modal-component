@@ -1,0 +1,65 @@
+.bodyImg {
+  width: 424rpx;
+  height: 528rpx;
+  border-radius: 8rpx;
+}
+
+.bodyAction {
+  padding-top: 32rpx;
+  font-size: 48rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.ant-modal-body-footer-horizontal-primary {
+  background-color: #F6392C;
+  border-radius: 5pX;
+  color: #ffffff;
+  margin-left: 6px;
+}
+
+.ant-modal-body-footer-horizontal-secondary {
+  background-color: #B4B4B4;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-right: 6px;
+}
+
+.ant-modal-body-content {
+  padding-top: 5px;
+  font-weight: bold;
+  color: #F6392C;
+}
+
+
+.ant-modal-body-footer-horizontal {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.ant-modal-body {
+  width: 400px;
+}
+
+.ant-modal-body-title {
+  font-weight: bold;
+  font-size: medium;
+}
+
+
+
+
+.container-modal {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 60px;
+  color: #F6392C;
+}
+
+.ant-popup-mask {
+  backdrop-filter: blur(10px);
+}

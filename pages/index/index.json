@@ -2,8 +2,7 @@
   "defaultTitle": "Modal",
   "usingComponents": {
     "icon": "antd-mini/es/Icon/index",
-    "modal": "antd-mini/es/Modal/index",
+    "modal-accept-cancel": "/components/modal-accept-cancel/modal-accept-cancel",
     "button": "antd-mini/es/Button/index"
-    
   }
 }

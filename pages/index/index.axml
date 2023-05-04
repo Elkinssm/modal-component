@@ -1,23 +1,15 @@
 <view>
-<view class="modal-container">
-  <modal
-  title="¿Estás seguro que deseas desactivar el servicio de Roaming internacional en tu línea?"
-  content="3102659717"
-  visible="{{customVisible}}"
-  onClose="handleClose"
-  primaryButtonText="Aceptar"
-  secondaryButtonText="Cancelar"
-  onPrimaryButtonTap="handlePrimaryButtonTap"
-  onSecondaryButtonTap="handleSecondaryButtonTap"
->
-  <view class="container-modal" slot="header">
-    <icon class="icon" type="InformationCircleOutline"/>
-  </view>
-</modal>
-</view>
-
-<view  class="list">
- <switch checked="{{switchValue}}" onChange="handleChange" />
-  </view>
-
+  <button onTap="handleOpenModal">Mostrar modal</button>
+  <modal-accept-cancel
+    title="¿Estás seguro que deseas desactivar el servicio de Roaming internacional en tu línea?"
+    content="3102659717"
+    visible="{{modalVisible}}"
+    onClose="handleCloseModal"
+    primaryButtonText="Aceptar"
+    secondaryButtonText="Cancelar"
+    onPrimaryButtonTap="onPrimaryButtonTap"
+    onSecondaryButtonTap="onSecondaryButtonTap"
+    
+  />
+  
 </view>
