@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "Modal",
+  "usingComponents": {
+    "icon": "antd-mini/es/Icon/index",
+    "modal": "antd-mini/es/Modal/index",
+    "button": "antd-mini/es/Button/index"
+    
+  }
+}
