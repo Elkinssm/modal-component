@@ -3,22 +3,21 @@ Component({
     title: "",
     content: "",
     visible: false,
-    onClose: () => {},
+    handleClose: () => {},
     primaryButtonText: "",
     secondaryButtonText: "",
-    onPrimaryButtonTap: () => {},
-    onSecondaryButtonTap: () => {},
- 
+    onAcceptButtonTap: () => {},
+    onSecondaryButtonTap: () => {}
   },
   methods: {
     handleClose() {
       this.props.onClose();
     },
-    onPrimaryButtonTap() {
+    onAcceptButtonTap() {
       this.handleClose();
       this.props.onPrimaryButtonTap();
     },
-    onSecondaryButtonTap() {
+    onCancelButtonTap() {
       this.handleClose();
       this.props.onSecondaryButtonTap();
     }

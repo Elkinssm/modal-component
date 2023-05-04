@@ -4,11 +4,11 @@
       title="{{title}}"
       content="{{content}}"
       visible="{{visible}}"
-      onClose="onClose"
+      onClose="handleClose"
       primaryButtonText="{{primaryButtonText}}"
       secondaryButtonText="{{secondaryButtonText}}"
-      onPrimaryButtonTap="onPrimaryButtonTap"
-      onSecondaryButtonTap="onSecondaryButtonTap"
+      onPrimaryButtonTap="onAcceptButtonTap"
+      onSecondaryButtonTap="onCancelButtonTap"
     >
       <view class="container-modal" slot="header">
         <icon class="icon" type="InformationCircleOutline" />

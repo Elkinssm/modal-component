@@ -1,45 +1,27 @@
 Page({
   data: {
-    modalVisible: false,
-    modalVisibleOne: false
+    modalVisible: false
   },
   handleOpenModal() {
     this.setData({
       modalVisible: true
     });
   },
-  handleCloseModal() {
+  handleClose() {
     this.setData({
       modalVisible: false
     });
   },
-  onPrimaryButtonTap() {
+  onAcceptButtonTap() {
     console.log("Aceptar");
     this.setData({
       modalVisible: false
     });
   },
-  onSecondaryButtonTap() {
+  onCancelButtonTap() {
     console.log("Cancelar");
     this.setData({
       modalVisible: false
-    });
-  },
-
-  handleOpenModalOne() {
-    this.setData({
-      modalVisibleOne: true
-    });
-  },
-  handleCloseModalOne() {
-    this.setData({
-      modalVisibleOne: false
-    });
-  },
-  onPrimaryButtonTapOne() {
-    console.log("Aceptar");
-    this.setData({
-      modalVisibleOne: false
     });
   }
 });

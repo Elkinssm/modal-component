@@ -4,11 +4,11 @@
     title="¿Estás seguro que deseas desactivar el servicio de Roaming internacional en tu línea?"
     content="3102659717"
     visible="{{modalVisible}}"
-    onClose="handleCloseModal"
+    onClose="handleClose"
     primaryButtonText="Aceptar"
     secondaryButtonText="Cancelar"
-    onPrimaryButtonTap="onPrimaryButtonTap"
-    onSecondaryButtonTap="onSecondaryButtonTap"
+    onPrimaryButtonTap="onAcceptButtonTap"
+    onSecondaryButtonTap="onCancelButtonTap"
     
   />
   
